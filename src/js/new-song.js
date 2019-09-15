@@ -17,12 +17,16 @@
       this.active()
       window.eventHub.on('upload', (data) => {
         this.active()
-        // console.log('new song 模块得到了 data')
-        // console.log(data)
+      })
+      window.eventHub.on('select', (data) => {
+        this.deactive()
       })
     },
     active() {
       $(this.view.el).addClass('active')
+    },
+    deactive() {
+      $(this.view.el).removeClass('active')
     }
   }
   controller.init(view, model)
