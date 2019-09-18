@@ -96,13 +96,17 @@
 .song-description h1 {
   color: white;
   font-size: 18px;
+  padding: 0 60px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .song-description p {
   font-size: 14px;
   line-height: 24px;
 }
 .song-description .lines {
-  transition: transform 0.3s;
+  transition: transform 0.2s;
 }
 .song-description .lyric {
   height: 72px;
